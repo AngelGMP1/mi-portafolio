@@ -1,41 +1,109 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angel Gamba - Portfolio</title>
+  <!-- Vinculación al CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Fuentes e íconos (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body>
-    <header>
-        <h1>¡Hola! Soy [Tu Nombre]</h1>
-        <p>Bienvenido a mi portafolio profesional</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Soy un estudiante de ingeniería apasionado por la tecnología y la innovación. Me especializo en proyectos de control y diseño de sistemas electrónicos.</p>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li>Proyecto 1: <a href="#">Enlace al proyecto</a></li>
-            <li>Proyecto 2: <a href="#">Enlace al proyecto</a></li>
-            <li>Proyecto 3: <a href="#">Enlace al proyecto</a></li>
-        </ul>
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Envíame un correo a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-    </section>
-    <footer>
-        <p>© 2025 [Tu Nombre]. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Encabezado con efecto de “hero section” -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Hello, I'm <span>Angel Gamba</span></h1>
+      <p class="hero-subtitle">
+        Electronics & Computer Engineer | Embedded Systems | Data Analysis
+      </p>
+      <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección “Acerca de mí” -->
+  <section id="about" class="section-container">
+    <h2>About Me</h2>
+    <p>
+      I am an enthusiastic engineer specialized in embedded systems, control design, 
+      and software development. My academic background includes Electronics & Computer 
+      Engineering, System Engineering, and experience in Data Analysis and Mechanics. 
+      I love blending hardware and software solutions to create efficient, innovative 
+      projects. My passion lies in tackling complex challenges, whether it's integrating 
+      microcontrollers with web applications or designing advanced robotics systems.
+    </p>
+  </section>
+
+  <!-- Sección “Habilidades” -->
+  <section id="skills" class="section-container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Embedded Systems (Arduino, Raspberry Pi, ESP32)</li>
+      <li>Robotics & Control (LiDAR mapping, obstacle avoidance)</li>
+      <li>Object-Oriented Programming (Java, Python)</li>
+      <li>Web Integration (HTML, CSS, basic backend)</li>
+      <li>Database Management (MySQL)</li>
+      <li>Data Analysis (Python, scientific libraries)</li>
+    </ul>
+  </section>
+
+  <!-- Sección “Proyectos” -->
+  <section id="projects" class="section-container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Autonomous Robot</h3>
+        <p>
+          Developed a robot powered by various microcontrollers (Arduino, Raspberry Pi) 
+          and sensors, including LiDAR, to map surroundings, overcome mazes, and avoid 
+          obstacles in real time.
+        </p>
+      </article>
+      <article class="project-card">
+        <h3>Banking System Simulation</h3>
+        <p>
+          Created a Java-MySQL application that simulates a virtual bank. Users can register, 
+          log in, manage multiple accounts, transfer money, and check balances. Implemented 
+          robust authentication and used UML diagrams for system structure.
+        </p>
+      </article>
+      <article class="project-card">
+        <h3>Jumping Bricks Ball Game</h3>
+        <p>
+          Built a simple yet engaging game in Python using Tkinter for a dynamic GUI. 
+          Handled game logic, event management, and design of graphical interfaces to 
+          deliver an interactive user experience.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección “Contacto” -->
+  <section id="contact" class="section-container">
+    <h2>Contact</h2>
+    <p>Feel free to reach me at:</p>
+    <p><a href="mailto:angelgamba1011@gmail.com">angelgamba1011@gmail.com</a></p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Angel Gamba. All rights reserved.</p>
+  </footer>
 </body>
 </html>
